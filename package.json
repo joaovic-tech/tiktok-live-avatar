@@ -1,0 +1,22 @@
+{
+  "name": "tiktok-live-connector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "João Victor <contato@joaovic.tech>",
+  "dependencies": {
+    "tiktok-live-connector": "^1.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "tsx": "^3.12.10"
+  }
+}
