@@ -1,22 +1,23 @@
 {
-  "name": "tiktok-live-connector",
+  "name": "tiktok-live-avatar",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "Avatar interativo com o chat ao vivo no tiktok",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/shared/*"
+  ],
   "scripts": {
-    "start": "node dist/server.js",
-    "dev": "tsx watch src/server.ts",
-    "build": "tsup"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "deploy": "turbo run build --scope=app --includeDependencies --no-deps"
   },
   "keywords": [],
-  "author": "João Victor <contato@joaovic.tech>",
-  "dependencies": {
-    "tiktok-live-connector": "^1.0.5"
-  },
+  "author": "@joaovic.tech <contato@joaovic.tech>",
+  "license": "GPL-3.0-only",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@typescript-eslint/parser": "^6.7.2",
-    "eslint": "^8.49.0",
-    "tsx": "^3.12.10"
+    "@types/node": "^20.6.3",
+    "turbo": "^1.10.14",
+    "typescript": "^5.2.2"
   }
 }

@@ -1,0 +1,2 @@
+# @name server-chat
+GET http://localhost:8080/chat

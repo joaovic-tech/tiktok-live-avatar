@@ -1,0 +1,26 @@
+{
+  "name": "@tiktok-live-avatar/server",
+  "version": "1.0.0",
+  "description": "Backend do avatar-npc",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "João Victor <contato@joaovic.tech>",
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@fastify/env": "^4.2.0",
+    "@tiktok-live-avatar/eslint-config-custom": "workspace:^",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.23.2",
+    "tiktok-live-connector": "^1.0.5"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.10"
+  }
+}
