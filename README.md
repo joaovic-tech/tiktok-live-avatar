@@ -10,9 +10,8 @@ Irei criar um avatar interativo com o chat ao vivo no tiktok, onde qualquer pess
 ### Como vai funcionar o avatar?
 * Irei criar vários vídeos onde cada um dele terá uma função
 * Vamos dar um exemplos com as lives que está em alta chamadas de `live npc`
-* Para cada **chats/gifts** que mandarem na live o sistema irar enviar para a `class` **"avatar"** 1 parâmetros:
-  * **data**: contendo as informações do usuário e o que ele enviou.
-* Com esse parâmetro o avatar irar verificar o que ele irar fazer a parte de uma estrutura de decisão.
+* Para cada **chats/gifts** que mandarem na live o servidor irar enviar os dados para um arquivo [JSON](./apps/server/live-messages.json).
+* Com esses dados do arquivo json o avatar irar verificar o que ele irar fazer a parte de uma estrutura de decisão.
 * Caso por exemplo seja um gift de banana, o avatar, irar falar "Banana". :/
 
 ---
@@ -21,7 +20,7 @@ Irei criar um avatar interativo com o chat ao vivo no tiktok, onde qualquer pess
 * [ ] Se conectar com a api do `tiktok-live-connector`
 * [ ] Pegar o nome do usuário da live.
   * Caso a live for encerrada ou não foi encontrado o nome do usuário o programa para de ser executado e o avatar encerra a live.
-* [ ] Enviar para o avatar todos os **chats/gifts** com o nome do usuário que o enviou-o
+* [ ] Enviar para o arquivo `JSON` todos os **chats/gifts** com o nome do usuário que o enviou-o
 
 ---
 
